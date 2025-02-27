@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Posts</title>
+    <link rel="stylesheet" href="{% static 'blog/styles.css' %}">
 </head>
 <body>
     <h1>Lista de Posts</h1>
     <a href="{% url 'post_create' %}">Crear Nuevo Post</a>
     <ul>
-        {% for post in posts %}
+        {% for post in object_list %}
             <li>
                 <a href="{% url 'post_detail' post.pk %}">{{ post.titulo }}</a>
                 <a href="{% url 'post_edit' post.pk %}">Editar</a>
                 <a href="{% url 'post_delete' post.pk %}">Eliminar</a>
             </li>
+        {% empty %}
+            <li>No hay posts disponibles.</li>
         {% endfor %}
     </ul>
 </body>
