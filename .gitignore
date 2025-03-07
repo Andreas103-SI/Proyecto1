@@ -1,37 +1,35 @@
 # Python
-*.pyc
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+*.pyo
+*.pyd
 
-# Virtual environments
+# Entornos virtuales
 venv/
 ENV/
+.env
 
-# Django
+# Base de datos
+*.db
+*.sqlite
+*.sqlite3
+db.sqlite3
+
+# Logs y archivos temporales
 *.log
 *.pot
-*.pyc
 *.so
-*.sqlite3
-*.pyo
-*.pyd
-*.db
-*.sqlite3
-*.sqlite
-*.pyo
-*.pyd
-*.db
-*.sqlite3
-*.sqlite
 
-# VS Code
+# IDE - Visual Studio Code
 .vscode/
 
-# MacOS
+# Sistema operativo
+## macOS
 .DS_Store
 
-# Windows
+## Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -40,21 +38,3 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
-# Entornos virtuales
-venv/
-
-# Archivos innecesarios de Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Bases de datos SQLite
-*.sqlite3
-db.sqlite3
-
-# Configuraciones y logs
-.env
-*.log
-```
-

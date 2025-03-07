@@ -72,10 +72,6 @@ El proyecto consiste en un blog donde los usuarios pueden crear, editar y elimin
 
     Puedes interactuar con la API en `http://127.0.0.1:8000/api/`.
 
-## Capturas de pantalla
-
-![Interfaz de administración](admin_screenshot.png)
-
 ## Contacto
 
 Si tienes alguna pregunta o sugerencia, puedes contactarme en andreasierra103@gmail.com.
